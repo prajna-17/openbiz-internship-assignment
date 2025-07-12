@@ -1,1 +1,1 @@
-Frontend code for OpenBiz assignment.
+FastAPI backend for OpenBiz assignment.
