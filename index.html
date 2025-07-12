@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Udyam Registration - Steps 1 & 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <form id="udyamForm">
+      <div class="step step-1">
+        <h2>Step 1: Aadhaar Verification</h2>
+        <label for="aadhaar">Aadhaar Number</label>
+        <input type="text" id="aadhaar" name="aadhaar" maxlength="12" required />
+        <span class="error" id="aadhaarError"></span>
+        <button type="button" id="nextBtn">Next</button>
+      </div>
+      <div class="step step-2 hidden">
+        <h2>Step 2: PAN Verification</h2>
+        <label for="pan">PAN Number</label>
+        <input type="text" id="pan" name="pan" maxlength="10" required />
+        <span class="error" id="panError"></span>
+        <label for="pincode">PIN Code</label>
+        <input type="text" id="pincode" name="pincode" maxlength="6" />
+        <label for="state">State</label>
+        <input type="text" id="state" name="state" readonly />
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" readonly />
+        <button type="button" id="backBtn">Back</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
